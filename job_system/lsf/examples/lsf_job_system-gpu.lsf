@@ -1,4 +1,5 @@
-#!/bin/sh
+#!bsub
+## !/bin/sh
 #BSUB -J "test" ## 任务名
 ## 队列名。
 #BSUB -q ssc-gpu ## 6个A100 GPU
