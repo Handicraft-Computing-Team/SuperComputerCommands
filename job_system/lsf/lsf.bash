@@ -1,5 +1,5 @@
 # 查看所有运行任务的详细情况
-bjobs –l 
+bjobs
 # 查看 JOBID 这个任务的详细情况
 bjobs –l JOBID
 # 跟踪查看某任务屏幕输出
@@ -20,3 +20,7 @@ lshosts
 bhosts 
 # 查看节点的即时负载信息
 lsload 
+# 查看提交的作业的负载和状态
+jobToLoad JOBID
+# 查看用户所有作业的负载和状态
+jobToLoad -a
