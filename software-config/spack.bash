@@ -19,3 +19,7 @@ spack arch --known-targets
 # 安装一个包
 spack install cmake
 
+# 报错了怎么办？
+# 情况1： 一些包的依赖包没有安装，比如cmake依赖openssl，那么就先安装openssl
+
+
