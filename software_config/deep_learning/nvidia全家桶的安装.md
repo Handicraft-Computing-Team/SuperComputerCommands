@@ -1,6 +1,9 @@
 ## nvidia-smi
 注意，nvidia显卡的驱动和CUDA是两个不同的软件，不要误以为nvidia-smi这个命令的存在就以为cuda安装好了
 nvidia-smi只是意味着显卡驱动安装好了。
+对于有调度系统的HPC环境，你往往无法在登录节点看到nvidia-smi，但是这只是意味着你在登录节点无法实际执行GPU运算，
+不代表你不可以用CPU和编译器去编译、安装、配置对应的CUDA库、Pytorch库。
+环境没有CPU不意味着Pytorch-GPU版不能安装。
 
 ## pytorch
 ```bash
