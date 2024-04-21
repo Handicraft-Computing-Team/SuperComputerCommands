@@ -1,6 +1,15 @@
 # 参考 https://zhuanlan.zhihu.com/p/426743137
 # 参考 https://spack.readthedocs.io/en/latest/getting_started.html
 
+# Spack的安装
+TargetPath=~/program_files/managers/
+mkdir $TargetPath -p
+cd $TargetPath 
+git clone -c feature.manyFiles=true https://github.com/spack/spack.git
+cd spack/bin
+# ./spack install zlib
+echo >>~/.bashrc
+
 # 查看现在可用的编译器
 spack compilers
 
