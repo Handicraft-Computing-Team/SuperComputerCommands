@@ -76,7 +76,7 @@ spack load cuda@11.8 # load corresponding cuda
   More in [Reference](https://chtc.cs.wisc.edu/uw-research-computing/hpc-spack-install)
 
 ## yaml Setting
-By adding a `packages.yaml` to the `.spack` folder, you can change the default compiler and use external cuda to build openmpi.
+By adding a `packages.yaml` to the `.spack` folder, you can change the default compiler and use external dependencies to build packages, like using installed cuda to build openmpi.
 
 - The `+cuda` is used to compile openmpi with cuda support
 - `%` means to specify the compiler used so that packages match with each others
