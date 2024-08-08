@@ -18,6 +18,6 @@ https://anaconda.org/anaconda/repo
 # http://mirrors.sustech.edu.cn/help/anaconda.html
 
 # 6. create environment
-conda create -n my_env ## or any other names
+conda create -n my_env python=3.11 ## or any other names
 conda activate my_env
-conda install python=3.11 
+conda install numpy
