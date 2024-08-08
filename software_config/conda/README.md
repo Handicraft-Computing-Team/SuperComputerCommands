@@ -42,6 +42,13 @@ If you are using cuda installed from spack or loading module installed by the ad
 Suppose your cuda version is 11.7, then you can goto [https://download.pytorch.org/whl/cu117](https://download.pytorch.org/whl/cu117) to find the available torch version.
 Then install with the following command:
 ```bash
-pip3 install torch==1.13.1+cu117--extra-index-url https://download.pytorch.org/whl/cu117 --no-cache-dir
+pip3 install torch==1.13.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117 --no-cache-dir
 ```
 [reference](https://stackoverflow.com/questions/70340812/how-to-install-pytorch-with-cuda-support-with-pip-in-visual-studio)
+
+After installation, you can use
+```bash
+python -c "import torch; print(torch.cuda.is_available())"
+bash
+```
+to check if your installation is successful.
