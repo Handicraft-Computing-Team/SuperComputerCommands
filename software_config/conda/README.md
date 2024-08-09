@@ -51,6 +51,5 @@ pip3 install torch==1.13.1+cu117 --extra-index-url https://download.pytorch.org/
 After installation, you can use
 ```bash
 python -c "import torch; print(torch.cuda.is_available())"
-bash
 ```
 to check if your installation is successful.
