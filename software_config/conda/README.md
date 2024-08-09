@@ -12,6 +12,8 @@ conda create -n my_env python=3.11 # or any other environment name and python ve
 conda activate my_env
 conda install numpy
 ```
+[Reference](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
 ## Install PyTorch with CUDA Support
 ### Check CUDA Version
 First, you need to check your cuda version accordingly.
