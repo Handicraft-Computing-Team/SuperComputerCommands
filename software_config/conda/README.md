@@ -12,6 +12,11 @@ conda create -n my_env python=3.11 # or any other environment name and python ve
 conda activate my_env
 conda install numpy
 ```
+### Clone New Environment
+The following line will allow you to clone the existing python environment so that you can install new packages without messing up with current environments.
+```bash
+conda create -n my_env --clone base
+```
 [Reference](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ## Install PyTorch with CUDA Support
@@ -53,3 +58,4 @@ After installation, you can use
 python -c "import torch; print(torch.cuda.is_available())"
 ```
 to check if your installation is successful.
+
