@@ -4,7 +4,7 @@
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh
 ```
-Terminal needs to be restarted.
+The terminal needs to be restarted.
 
 ## Create Environment
 ```bash
@@ -12,8 +12,12 @@ conda create -n my_env python=3.11 # or any other environment name and python ve
 conda activate my_env
 conda install numpy
 ```
+Alternatively, you can also create your environment to a specific directory:
+```bash
+conda create -p ./env python=3.11
+```
 ### Clone New Environment
-The following line will allow you to clone the existing python environment so that you can install new packages without messing up with current environments.
+The following line will allow you to clone the existing Python environment to install new packages without messing up with current environments.
 ```bash
 conda create -n my_env --clone base
 ```
@@ -21,12 +25,12 @@ conda create -n my_env --clone base
 
 ## Install PyTorch with CUDA Support
 ### Check CUDA Version
-First, you need to check your cuda version accordingly.
+First, you need to check your Cuda version accordingly.
 If the node that you are configuring is the same as the computing node, you can use
 ```bash
 nvidia-smi
 ```
-to check your cuda version from the output:
+to check your Cuda version from the output:
 ```
 Thu Aug  8 16:51:54 2024       
 +-----------------------------------------------------------------------------+
@@ -41,7 +45,7 @@ Thu Aug  8 16:51:54 2024
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
 ```
-here at the upper right corner we can see that the cuda version is 11.8.
+here at the upper right corner, we can see that the Cuda version is 11.8.
 
 If you are using cuda installed from spack or loading module installed by the admin, `which nvcc` will work as well.
 
