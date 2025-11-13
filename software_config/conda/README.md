@@ -50,6 +50,8 @@ here at the upper right corner, we can see that the Cuda version is 11.8.
 If you are using cuda installed from spack or loading module installed by the admin, `which nvcc` will work as well.
 
 ### Installation
+*If you are installing newer versions of torch, just type `pip install torch` and it will include the GPU version for you.*
+
 Suppose your cuda version is 11.7, then you can goto [https://download.pytorch.org/whl/cu117](https://download.pytorch.org/whl/cu117) to find the available torch version.
 Then install with the following command:
 ```bash
